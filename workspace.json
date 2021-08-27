@@ -14,7 +14,15 @@
             "outputPath": "dist/apps/next-app"
           },
           "configurations": {
-            "production": {}
+            "production": {},
+            "test": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/next-app/environments/environment.ts",
+                  "with": "apps/next-app/environments/environment.test.ts"
+                }
+              ]
+            }
           }
         },
         "serve": {

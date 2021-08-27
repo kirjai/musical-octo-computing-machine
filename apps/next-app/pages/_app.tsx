@@ -1,8 +1,11 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
+import { MY_VAR } from '../environments/environment';
 
 function CustomApp({ Component, pageProps }: AppProps) {
+  console.log('my var', MY_VAR);
+
   return (
     <>
       <Head>
